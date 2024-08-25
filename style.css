@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+body{
+  overflow: auto
+}
+
+html body{
+  height: 100%
+}
+
+/* Header */
+
+.header h4{
+    margin-right: 10px;
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    float: right;
+  }
+  
+  
+  .header header{
+      z-index: 2;
+    opacity: 0.8;
+    padding: 15px;
+    border-radius: 0px;
+      background: rgba(28, 30, 34);
+      width: 100%;
+      height: 55px;
+      position: fixed;
+      z-index: 999px;
+      top: 0;
+      left: 0;
+      margin-bottom: 100px;
+  }
+  
+  .header header a{
+      margin-left: 10px;
+      margin-right: 20px;
+  }
+  
+  .header nav{
+      float: left;
+  }
+  
+  .header nav ul{
+      list-style: none;
+      overflow: hidden;
+  }
+  
+  .header nav ul li{
+      float: left;
+      font-size: 20px;
+  }
+  
+  .header nav ul li a{
+      display: block;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  .header nav ul li:hover{
+      background: #cba3ff;
+  }
+  
+  .header li img{
+    height: 35px;
+  }
+
+  .header .titulo{
+    display: flex;
+    position: absolute;
+  }
+
+  .header .titulo{
+    left: 40%;
+  }
+
+  /* Fondo */
+  
+  svg {
+    position: fixed;
+    z-index: 0.1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  @keyframes girarIzquierda {
+    100% {
+        transform: rotate(-360deg);
+    }
+  }
+  
+  @keyframes girarDerecha {
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  
+  .Morado {
+    animation: girarIzquierda 40s linear infinite;
+    transform-origin: 13px 25px;
+  }
+  
+  .Violeta {
+    animation: girarDerecha 20s linear infinite;
+    transform-origin: 13px 25px;
+  }
+  
+  .azul {
+    animation: girarDerecha 25s linear infinite;
+    transform-origin: 84px 93px;
+  }
+  
+  .Morado-Claro {
+    animation: girarIzquierda 35s linear infinite;
+    transform-origin: 84px 93px;
+  }
+
+  /* Footer */
+
+footer {
+  z-index: 2;
+opacity: 0.8;
+padding: 15px;
+border-radius: 0px;
+  background: #2C2C2C;
+  color:white;
+  text-align:center;
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+}
+
+
+  /* About */
+
+  .about  button{
+    z-index: 2;
+  opacity: 0.8;
+  padding: 15px;
+  border-radius: 15px;
+    margin-left: 48%;
+     margin-top: 150px;
+     font-size: 1.5em;
+     padding: 10px 20px;
+     border-radius: 5px;
+     border: 1px solid #333;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+     font-family: sans-serif;
+     font-weight: bold;
+     color: #333;
+     background-color: #FFF;
+     position: relative;
+     -webkit-transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
+  }
+
+  .about button:hover{
+    color: #555;
+  background-color: #F0F0F0;
+  }
+
+  .about button:focus{
+    outline: none;
+  }
+
+  .about p{
+    box-shadow: 10px 10px #868282;
+    z-index: 2;
+  opacity: 0.9;
+  padding: 15px;
+  border-radius: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 700px;
+    height: 100px;
+    width: 500px;
+    border: 5px solid;
+    background-color: #cfcfcf;
+    text-align: justify;
+
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+  }
+
+  .about p:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4%);
+  }
+
+  /* Proyectos */
+
+  .proyectos{
+    z-index: 2;
+  padding: 15px;
+  border-radius: 15px;
+  }
+
+
+  .proyectos h2{
+    border: 5px solid;
+    background-color: #cfcfcf;
+    border-radius: 15px;
+    opacity: 0.8;
+    text-align: center;
+    margin-left: 700px;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-top: 100px;
+    height: 40px;
+    width: 500px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+  }
+
+  .proyectos h2:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4%);
+  }
+
+  /* Dinosaurio */
+
+  .proyectos .old{
+    display: flex;
+    position: relative;
+    float: left;
+    margin-top: 10px;
+  }
+
+  .proyectos .old h4{
+    background-color: #cfcfcf;
+    text-align: justify;
+    margin-top: 120px;
+    position: absolute;
+    left: 5%;
+    padding: 10px;
+    top: 35%;
+    font-weight: 500;
+    width: 260px;
+    border-radius: 10px;
+    border: solid 2px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+  }
+
+  .proyectos .old h4:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4%);
+  }
+
+  /* Arch */
+
+  .proyectos .arch{
+    display: flex;
+    position: relative;
+    margin-left: 500px;
+  }
+
+  .proyectos .arch h4{
+    background-color: #cfcfcf;
+    text-align: justify;
+    margin-top: 120px;
+    position: absolute;
+    left: 5%;
+    padding: 10px;
+    top: 35%;
+    font-weight: 500;
+    width: 190px;
+    border-radius: 10px;
+    border: solid 2px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+  }
+
+  .proyectos .arch h4:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4%);
+  }
+
+
+
+
+  
+
+  
